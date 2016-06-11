@@ -67,7 +67,7 @@ int main()
 				int fx = findf(x), fy = findf(y);
 				if (fx == fy)
 				{
-					if (d[x] ^ d[y] != z)
+					if ((d[x] ^ d[y]) != z)
 					{
 						printf("The first %d facts are conflicting.\n", T);
 						return 0;

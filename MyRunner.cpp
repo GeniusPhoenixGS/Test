@@ -58,5 +58,15 @@ int main(int tot, char **st)
         double now = (double)clock() / CLOCKS_PER_SEC;
         printf("Time : %.6fs\n", now - pred);
     }
+	if (mode == 2)
+    {
+	    char ssss[1000];
+        strcat(ssss, st[1]);
+        strcat(ssss, ".exe < input > output");
+        double pred = (double)clock() / CLOCKS_PER_SEC;
+        printf("Error : %d   ", system(ssss));
+        double now = (double)clock() / CLOCKS_PER_SEC;
+        printf("Time : %.6fs\n", now - pred);
+    }
 	return 0;
 }
