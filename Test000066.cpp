@@ -59,7 +59,7 @@ int main()
 			{
 				head[loc + n]++;
 			}
-			while (head[loc + n] <= tail[loc + n] && g(i - 1, now(j - 1)) >= g(q[loc + n][tail[loc + n]], now(q[loc + n][tail[loc + n]] - loc - n)))
+			while (head[loc + n] <= tail[loc + n] && g(i - 1, now(j - 1)) >= g(q[loc + n][tail[loc + n]], now(q[loc + n][tail[loc + n]] - loc + n)))
 			{
 				tail[loc + n]--;
 			}
